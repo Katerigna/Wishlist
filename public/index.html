@@ -1,10 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-</head>
-<body>
-    <script src="/js/vue.js"></script>
-    <script src="/js/axios.min.js"></script>
-</body>
+    <head>
+        <title>Wishlist</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1>My wishlist</h1>
+
+            <form>
+                <h2>Registration</h2>
+
+                <label for="name">Nickname:</label>
+                <input
+                    v-model="name"
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="nickname"
+                />
+
+                <label for="email">Email:</label>
+                <input
+                    v-model="email"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                />
+
+                <label for="password">Password:</label>
+                <input
+                    v-model="password"
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                />
+
+                <button @click="handleClick">Save</button>
+            </form>
+        </div>
+        <!--main-->
+
+        <script src="/js/vue.js"></script>
+        <script src="/js/axios.min.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
 </html>
