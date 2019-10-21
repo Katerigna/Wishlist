@@ -13,7 +13,7 @@ console.log("sanity check");
                 e.preventDefault();
 
                 axios
-                    .post("/register", formData)
+                    .post("/register")
                     .then(function(response) {
                         console.log("registration response from db", response);
                     })
